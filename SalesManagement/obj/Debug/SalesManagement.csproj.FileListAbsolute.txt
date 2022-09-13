@@ -1,0 +1,17 @@
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\bin\Debug\SalesManagement.exe.config
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\bin\Debug\SalesManagement.exe
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\bin\Debug\SalesManagement.pdb
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.Properties.Resources.resources
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.csproj.GenerateResource.cache
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.csproj.CoreCompileInputs.cache
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.exe
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.pdb
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\bin\Debug\EntityFramework.dll
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\bin\Debug\EntityFramework.xml
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.csproj.CopyComplete
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.csproj.AssemblyReference.cache
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.FormMainWindow.resources
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.FormSales.resources
+C:\Users\panou\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.FormSalesPersons.resources
