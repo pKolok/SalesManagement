@@ -22,6 +22,7 @@ namespace SalesManagement
     
         public int ID { get; set; }
         public string Name { get; set; }
+        public decimal Fees { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Sale> Sales { get; set; }

@@ -16,9 +16,9 @@ namespace SalesManagement
     {
         public int ID { get; set; }
         public int SalesPersonID { get; set; }
-        public byte[] SalesPerson { get; set; }
+        public string SalesPerson { get; set; }
         public decimal Amount { get; set; }
-        public string Date { get; set; }
+        public System.DateTime Date { get; set; }
     
         public virtual SalesPerson SalesPerson1 { get; set; }
     }

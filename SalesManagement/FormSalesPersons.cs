@@ -23,18 +23,22 @@ namespace SalesManagement
 
         private void InsertButton_Click(object sender, EventArgs e)
         {
+            if (NameTextBox.Text.Trim() == "")
+            {
+                MessageBox.Show("Please insert sale's person name");
+                return;
+            }
+
             model.Name = NameTextBox.Text.Trim();
 
             using (DBEntities db = new DBEntities())
             {
-                if (model.ID == 0)   //Insert
-                {
+                //Insert
+                if (model.ID == 0)
                     db.SalesPersons.Add(model);
-                }
-                else    // Update
-                {
+                // Update
+                else
                     db.Entry(model).State = EntityState.Modified;
-                }
 
                 db.SaveChanges();
             }
@@ -70,12 +74,6 @@ namespace SalesManagement
             Clear();
         }
 
-        private void SalesManagement_Load(object sender, EventArgs e)
-        {
-            Clear();
-            PopulateDataGridView();
-        }
-
         private void SalesPersonsDgv_DoubleClick(object sender, EventArgs e)
         {
             if (SalesPersonsDgv.CurrentRow.Index != -1)
@@ -102,9 +100,15 @@ namespace SalesManagement
             formMainWindow.ShowDialog();
         }
 
+        private void FormSalesPersons_Load(object sender, EventArgs e)
+        {
+            Clear();
+            PopulateDataGridView();
+        }
+
         void Clear()
         {
-            NameTextBox.Text = NameTextBox.Text = "";
+            NameTextBox.Text = "";
             InsertButton.Text = "Insert";
             DeleteButton.Enabled = false;
             model.ID = 0;

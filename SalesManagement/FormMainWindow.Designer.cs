@@ -151,6 +151,7 @@ namespace SalesManagement
             this.Controls.Add(this.LabelMainWindowSalesPersonsNumber);
             this.Controls.Add(this.labelMainWindowSalesPerson);
             this.Controls.Add(this.panelSalesManager);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormMainWindow";
             this.Padding = new System.Windows.Forms.Padding(20);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

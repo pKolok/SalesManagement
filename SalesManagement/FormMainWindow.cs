@@ -39,7 +39,14 @@ namespace SalesManagement
 
         private void MainWindow_Load(object sender, EventArgs e)
         {
-
+            using (DBEntities db = new DBEntities())
+            {
+                int count = db.SalesPersons.Count();
+                LabelMainWindowSalesPersonsNumber.Text = Convert.ToString(
+                    db.SalesPersons.Count());
+                LabelMainWindowSalesNumber.Text = Convert.ToString(
+                    db.Sales.Count());
+            }
         }
     }
 }
