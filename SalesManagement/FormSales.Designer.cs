@@ -35,6 +35,11 @@ namespace SalesManagement
             this.DateLabel = new System.Windows.Forms.Label();
             this.AmountTextBox = new System.Windows.Forms.TextBox();
             this.SalesDgv = new System.Windows.Forms.DataGridView();
+            this.SalesID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SalesPersonID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SalesPersonName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.InsertButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
@@ -44,11 +49,6 @@ namespace SalesManagement
             this.labelSalesSalesPersonsID = new System.Windows.Forms.Label();
             this.comboBoxSalesSalesPersonID = new System.Windows.Forms.ComboBox();
             this.textBoxSalesSalesPersonName = new System.Windows.Forms.TextBox();
-            this.SalesID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SalesPersonID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SalesPersonName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlSalesTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SalesDgv)).BeginInit();
             this.SuspendLayout();
@@ -78,7 +78,7 @@ namespace SalesManagement
             // 
             this.AmountLabel.AutoSize = true;
             this.AmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AmountLabel.Location = new System.Drawing.Point(17, 195);
+            this.AmountLabel.Location = new System.Drawing.Point(72, 191);
             this.AmountLabel.Name = "AmountLabel";
             this.AmountLabel.Size = new System.Drawing.Size(59, 18);
             this.AmountLabel.TabIndex = 2;
@@ -88,7 +88,7 @@ namespace SalesManagement
             // 
             this.DateLabel.AutoSize = true;
             this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateLabel.Location = new System.Drawing.Point(16, 234);
+            this.DateLabel.Location = new System.Drawing.Point(91, 234);
             this.DateLabel.Name = "DateLabel";
             this.DateLabel.Size = new System.Drawing.Size(39, 18);
             this.DateLabel.TabIndex = 2;
@@ -117,15 +117,56 @@ namespace SalesManagement
             this.Date});
             this.SalesDgv.Location = new System.Drawing.Point(308, 107);
             this.SalesDgv.Name = "SalesDgv";
+            this.SalesDgv.ReadOnly = true;
             this.SalesDgv.Size = new System.Drawing.Size(514, 318);
             this.SalesDgv.TabIndex = 4;
             this.SalesDgv.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SalesDgv_CellDoubleClick);
             // 
+            // SalesID
+            // 
+            this.SalesID.DataPropertyName = "ID";
+            this.SalesID.HeaderText = "Sales ID";
+            this.SalesID.Name = "SalesID";
+            this.SalesID.ReadOnly = true;
+            this.SalesID.Visible = false;
+            // 
+            // SalesPersonID
+            // 
+            this.SalesPersonID.DataPropertyName = "SalesPersonID";
+            this.SalesPersonID.HeaderText = "Sales Person ID";
+            this.SalesPersonID.Name = "SalesPersonID";
+            this.SalesPersonID.ReadOnly = true;
+            this.SalesPersonID.Visible = false;
+            // 
+            // SalesPersonName
+            // 
+            this.SalesPersonName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SalesPersonName.DataPropertyName = "SalesPerson";
+            this.SalesPersonName.HeaderText = "Sales Person";
+            this.SalesPersonName.Name = "SalesPersonName";
+            this.SalesPersonName.ReadOnly = true;
+            // 
+            // Amount
+            // 
+            this.Amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Amount.DataPropertyName = "Amount";
+            this.Amount.HeaderText = "Amount [Euros]";
+            this.Amount.Name = "Amount";
+            this.Amount.ReadOnly = true;
+            // 
+            // Date
+            // 
+            this.Date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Date.DataPropertyName = "Date";
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            this.Date.ReadOnly = true;
+            // 
             // InsertButton
             // 
-            this.InsertButton.Location = new System.Drawing.Point(27, 319);
+            this.InsertButton.Location = new System.Drawing.Point(19, 319);
             this.InsertButton.Name = "InsertButton";
-            this.InsertButton.Size = new System.Drawing.Size(75, 48);
+            this.InsertButton.Size = new System.Drawing.Size(88, 48);
             this.InsertButton.TabIndex = 5;
             this.InsertButton.Text = "Insert";
             this.InsertButton.UseVisualStyleBackColor = true;
@@ -133,9 +174,9 @@ namespace SalesManagement
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(108, 319);
+            this.DeleteButton.Location = new System.Drawing.Point(113, 319);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(75, 48);
+            this.DeleteButton.Size = new System.Drawing.Size(88, 48);
             this.DeleteButton.TabIndex = 5;
             this.DeleteButton.Text = "Delete";
             this.DeleteButton.UseVisualStyleBackColor = true;
@@ -143,9 +184,9 @@ namespace SalesManagement
             // 
             // ClearButton
             // 
-            this.ClearButton.Location = new System.Drawing.Point(187, 319);
+            this.ClearButton.Location = new System.Drawing.Point(206, 319);
             this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(75, 48);
+            this.ClearButton.Size = new System.Drawing.Size(88, 48);
             this.ClearButton.TabIndex = 5;
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = true;
@@ -155,7 +196,7 @@ namespace SalesManagement
             // 
             this.btnSalesBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnSalesBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalesBack.Location = new System.Drawing.Point(27, 379);
+            this.btnSalesBack.Location = new System.Drawing.Point(19, 377);
             this.btnSalesBack.Name = "btnSalesBack";
             this.btnSalesBack.Size = new System.Drawing.Size(75, 48);
             this.btnSalesBack.TabIndex = 5;
@@ -175,7 +216,7 @@ namespace SalesManagement
             // 
             this.labelSalesSalesPerson.AutoSize = true;
             this.labelSalesSalesPerson.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSalesSalesPerson.Location = new System.Drawing.Point(16, 155);
+            this.labelSalesSalesPerson.Location = new System.Drawing.Point(34, 155);
             this.labelSalesSalesPerson.Name = "labelSalesSalesPerson";
             this.labelSalesSalesPerson.Size = new System.Drawing.Size(97, 18);
             this.labelSalesSalesPerson.TabIndex = 2;
@@ -209,41 +250,6 @@ namespace SalesManagement
             this.textBoxSalesSalesPersonName.Name = "textBoxSalesSalesPersonName";
             this.textBoxSalesSalesPersonName.Size = new System.Drawing.Size(157, 26);
             this.textBoxSalesSalesPersonName.TabIndex = 3;
-            // 
-            // SalesID
-            // 
-            this.SalesID.DataPropertyName = "ID";
-            this.SalesID.HeaderText = "Sales ID";
-            this.SalesID.Name = "SalesID";
-            this.SalesID.Visible = false;
-            // 
-            // SalesPersonID
-            // 
-            this.SalesPersonID.DataPropertyName = "SalesPersonID";
-            this.SalesPersonID.HeaderText = "Sales Person ID";
-            this.SalesPersonID.Name = "SalesPersonID";
-            this.SalesPersonID.Visible = false;
-            // 
-            // SalesPersonName
-            // 
-            this.SalesPersonName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SalesPersonName.DataPropertyName = "SalesPerson";
-            this.SalesPersonName.HeaderText = "Sales Person";
-            this.SalesPersonName.Name = "SalesPersonName";
-            // 
-            // Amount
-            // 
-            this.Amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Amount.DataPropertyName = "Amount";
-            this.Amount.HeaderText = "Amount [Euros]";
-            this.Amount.Name = "Amount";
-            // 
-            // Date
-            // 
-            this.Date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Date.DataPropertyName = "Date";
-            this.Date.HeaderText = "Date";
-            this.Date.Name = "Date";
             // 
             // FormSales
             // 

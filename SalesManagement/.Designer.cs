@@ -39,6 +39,7 @@ namespace SalesManagement
             this.DeleteButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
             this.btnSalesPersonsBack = new System.Windows.Forms.Button();
+            this.btnSalesPersonDetails = new System.Windows.Forms.Button();
             this.SalesPersonID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SalesPersonName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fees = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,11 +72,11 @@ namespace SalesManagement
             // 
             this.NameLabel.AutoSize = true;
             this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameLabel.Location = new System.Drawing.Point(19, 106);
+            this.NameLabel.Location = new System.Drawing.Point(23, 106);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(51, 20);
+            this.NameLabel.Size = new System.Drawing.Size(80, 20);
             this.NameLabel.TabIndex = 1;
-            this.NameLabel.Text = "Name";
+            this.NameLabel.Text = "Full Name";
             // 
             // NameTextBox
             // 
@@ -157,6 +158,16 @@ namespace SalesManagement
             this.btnSalesPersonsBack.UseVisualStyleBackColor = false;
             this.btnSalesPersonsBack.Click += new System.EventHandler(this.btnSalesPersonsBack_Click);
             // 
+            // btnSalesPersonDetails
+            // 
+            this.btnSalesPersonDetails.Location = new System.Drawing.Point(23, 165);
+            this.btnSalesPersonDetails.Name = "btnSalesPersonDetails";
+            this.btnSalesPersonDetails.Size = new System.Drawing.Size(234, 153);
+            this.btnSalesPersonDetails.TabIndex = 3;
+            this.btnSalesPersonDetails.Text = "Details";
+            this.btnSalesPersonDetails.UseVisualStyleBackColor = true;
+            this.btnSalesPersonDetails.Click += new System.EventHandler(this.btnSalesPersonDetails_Click);
+            // 
             // SalesPersonID
             // 
             this.SalesPersonID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -169,7 +180,7 @@ namespace SalesManagement
             // 
             this.SalesPersonName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.SalesPersonName.DataPropertyName = "Name";
-            this.SalesPersonName.HeaderText = "Name";
+            this.SalesPersonName.HeaderText = "Full Name";
             this.SalesPersonName.Name = "SalesPersonName";
             this.SalesPersonName.ReadOnly = true;
             // 
@@ -191,6 +202,7 @@ namespace SalesManagement
             this.Controls.Add(this.SalesPersonsDgv);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.DeleteButton);
+            this.Controls.Add(this.btnSalesPersonDetails);
             this.Controls.Add(this.InsertButton);
             this.Controls.Add(this.NameTextBox);
             this.Controls.Add(this.NameLabel);
@@ -220,6 +232,7 @@ namespace SalesManagement
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.Button btnSalesPersonsBack;
+        private System.Windows.Forms.Button btnSalesPersonDetails;
         private System.Windows.Forms.DataGridViewTextBoxColumn SalesPersonID;
         private System.Windows.Forms.DataGridViewTextBoxColumn SalesPersonName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fees;

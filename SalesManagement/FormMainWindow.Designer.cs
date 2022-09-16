@@ -67,25 +67,25 @@ namespace SalesManagement
             this.labelMainWindowSalesPerson.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMainWindowSalesPerson.Location = new System.Drawing.Point(59, 133);
             this.labelMainWindowSalesPerson.Name = "labelMainWindowSalesPerson";
-            this.labelMainWindowSalesPerson.Size = new System.Drawing.Size(143, 24);
+            this.labelMainWindowSalesPerson.Size = new System.Drawing.Size(149, 24);
             this.labelMainWindowSalesPerson.TabIndex = 1;
-            this.labelMainWindowSalesPerson.Text = "Sales Persons";
+            this.labelMainWindowSalesPerson.Text = "Sales Persons:";
             // 
             // labelMainWindowSales
             // 
             this.labelMainWindowSales.AutoSize = true;
             this.labelMainWindowSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMainWindowSales.Location = new System.Drawing.Point(16, 223);
+            this.labelMainWindowSales.Location = new System.Drawing.Point(26, 223);
             this.labelMainWindowSales.Name = "labelMainWindowSales";
-            this.labelMainWindowSales.Size = new System.Drawing.Size(186, 24);
+            this.labelMainWindowSales.Size = new System.Drawing.Size(182, 24);
             this.labelMainWindowSales.TabIndex = 1;
-            this.labelMainWindowSales.Text = "Total Sales [Euros]";
+            this.labelMainWindowSales.Text = "Total Sales [Euro]:";
             // 
             // LabelMainWindowSalesPersonsNumber
             // 
             this.LabelMainWindowSalesPersonsNumber.AutoSize = true;
             this.LabelMainWindowSalesPersonsNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelMainWindowSalesPersonsNumber.Location = new System.Drawing.Point(239, 133);
+            this.LabelMainWindowSalesPersonsNumber.Location = new System.Drawing.Point(218, 133);
             this.LabelMainWindowSalesPersonsNumber.Name = "LabelMainWindowSalesPersonsNumber";
             this.LabelMainWindowSalesPersonsNumber.Size = new System.Drawing.Size(20, 24);
             this.LabelMainWindowSalesPersonsNumber.TabIndex = 1;
@@ -95,7 +95,7 @@ namespace SalesManagement
             // 
             this.LabelMainWindowSalesNumber.AutoSize = true;
             this.LabelMainWindowSalesNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelMainWindowSalesNumber.Location = new System.Drawing.Point(239, 223);
+            this.LabelMainWindowSalesNumber.Location = new System.Drawing.Point(218, 223);
             this.LabelMainWindowSalesNumber.Name = "LabelMainWindowSalesNumber";
             this.LabelMainWindowSalesNumber.Size = new System.Drawing.Size(20, 24);
             this.LabelMainWindowSalesNumber.TabIndex = 1;

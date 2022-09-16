@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
-using System.Data.SqlClient;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SalesManagement
@@ -44,7 +38,6 @@ namespace SalesManagement
             }
             Clear();
             PopulateDataGridView();
-            MessageBox.Show("Submitted Successfully");
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
@@ -63,8 +56,6 @@ namespace SalesManagement
                     
                     PopulateDataGridView();
                     Clear();
-
-                    MessageBox.Show("Deleted Successfully");
                 }
             }
         }
@@ -91,6 +82,8 @@ namespace SalesManagement
                 InsertButton.Text = "Update";
                 DeleteButton.Enabled = true;
             }
+
+            btnSalesPersonDetails.Show();
         }
 
         private void btnSalesPersonsBack_Click(object sender, EventArgs e)
@@ -98,6 +91,13 @@ namespace SalesManagement
             this.Hide();
             FormMainWindow formMainWindow = new FormMainWindow();
             formMainWindow.ShowDialog();
+        }
+
+        private void btnSalesPersonDetails_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormSalesPersonDetails formDetails = new FormSalesPersonDetails(model.ID);
+            formDetails.ShowDialog();
         }
 
         private void FormSalesPersons_Load(object sender, EventArgs e)
@@ -112,6 +112,7 @@ namespace SalesManagement
             InsertButton.Text = "Insert";
             DeleteButton.Enabled = false;
             model.ID = 0;
+            btnSalesPersonDetails.Hide();
         }
 
         void PopulateDataGridView()

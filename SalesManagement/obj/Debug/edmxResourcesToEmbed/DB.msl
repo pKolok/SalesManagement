@@ -15,9 +15,9 @@
     <EntitySetMapping Name="SalesPersons">
       <EntityTypeMapping TypeName="SalesManagementDBModel.SalesPerson">
         <MappingFragment StoreEntitySet="SalesPersons">
-          <ScalarProperty Name="Fees" ColumnName="Fees" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Fees" ColumnName="Fees" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
